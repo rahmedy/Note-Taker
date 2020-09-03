@@ -1,6 +1,11 @@
 # Note-Taker
 This is an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve notes data from a JSON file. This application  will allow the user to post new notes and delete old ones.This  simple application uses HTML, CSS, Node.js, Express.js and  JSON.
 
+#License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
 # Description
 
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
