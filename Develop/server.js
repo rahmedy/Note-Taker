@@ -47,14 +47,17 @@ app.post('/api/notes', (req, res) => {
 
 
 app.delete("/api/notes/:id", (req, res) => {
-  const noteID = req.params.id;
-  const newNotes = api.filter((note) => note.id !== Number(noteID));
+  const idDelete = req.params.id;
+  const newNotes = api.filter(notes => notes.id != idDelete);
+  api= newNotes;
   fs.writeFile("db/db.json", JSON.stringify(newNotes), (err) => {
-    if (err) throw err;
-    res.json(newNotes);
-    location.reload();
+    if (err)
+      console.log(err);
   });
-});
+    res.json(newNotes);
+    // location.reload();
+  });
+
 
 
 
