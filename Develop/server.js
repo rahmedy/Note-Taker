@@ -34,13 +34,10 @@ app.post('/api/notes', (req, res) => {
   newN.id = id;
   api.push(newN);
 
-  fs.writeFile("db/db.json", JSON.stringify(api)),(err) => {
+  fs.writeFile("db/db.json", JSON.stringify(api),(err) => {
     if (err)
       console.log(err);
-    else {
-      console.log("Note written!");
-    }
-  };
+  });
   res.json(newN);
   // fs.readFile('db/db.json', function (err, data) {
   // if (err) throw err;
