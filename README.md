@@ -4,6 +4,13 @@ This is an application that can be used to write, save, and delete notes. This a
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## User Story
+
+AS a user, I want to be able to write and save notes
+
+I want to be able to delete notes I've written before
+
+SO that I can organize my thoughts and keep track of tasks I need to complete
 
 
 # Deployed Application On Heroku: 
@@ -32,13 +39,6 @@ Create an application that can be used to write, save, and delete notes. This ap
 
   * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-## User Story
-
-AS a user, I want to be able to write and save notes
-
-I want to be able to delete notes I've written before
-
-SO that I can organize my thoughts and keep track of tasks I need to complete
 
 ## Questions ? 
 
